@@ -1,0 +1,32 @@
+@import "tailwindcss";
+/* 1. Suntikkan semua style dasar, komponen, dan utility dari Tailwind */
+
+
+/* 2. (Opsional) Tambahkan CSS kustom Anda di sini */
+@layer base {
+  /* Contoh: mendefinisikan variabel warna untuk digunakan di HTML */
+  :root {
+    --accent-color: #20b77d;
+    --secondary-color: #f0f9ff;
+  }
+}
+
+@layer utilities {
+  /* Animasi untuk logo partner yang bergerak */
+  .logo-slider {
+    display: inline-block;
+    white-space: nowrap;
+    /* Duplikasi logo di HTML diperlukan agar animasi terlihat mulus */
+    animation: slide 30s linear infinite;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      /* Bergerak sejauh 50% karena kita menduplikasi set logo */
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICLLLE | International Conference on Language Linguistic Literature and Education</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon (Ganti dengan path yang benar) -->
+    <link rel="shortcut icon" type="image/png" href="img/ICLLLE.png">
+    
+    <!-- Tailwind CSS Output -->
+    <link href="output.css" rel="stylesheet">
+
+    <style>
+        /* Menambahkan style kustom untuk warna tema */
+        :root {
+            --accent-color: #125e3a; /* Warna utama ( hijau tua) */
+            --secondary-color: #eaf7f1; /* Warna latar belakang sekunder (biru sangat muda) */
+        }
+        .accent-bg { background-color: var(--accent-color); }
+        .accent-text { color: var(--accent-color); }
+        .secondary-bg { background-color: var(--secondary-color); }
+        /* #scrollUpBtn { background-color: var(--accent-color); } */
+    </style>
+</head>
+<body class="font-['Inter',_sans-serif] bg-white">
+
+    <!-- Header & Navbar -->
+    <header class="accent-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="#home" class="flex items-center space-x-2">
+                <!-- Ganti 'img/icllle-lagi.png' dengan path logo Anda -->
+                <img src="img/icllle-lagi.png" alt="ICLLLE Logo" class="h-10 w-auto" onerror="this.onerror=null;this.src='https://placehold.co/150x40/ffffff/053946?text=Logo';">
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-yellow-400 transition-colors">Home</a>
+                <a href="#call-for-papers" class="hover:text-yellow-400 transition-colors">Call For Papers</a>
+                <a href="#speakers" class="hover:text-yellow-400 transition-colors">Speakers</a>
+                <a href="#payment" class="hover:text-yellow-400 transition-colors">Payment</a>
+                <a href="#register" class="hover:text-yellow-400 transition-colors">Register</a>
+                <a href="#contact" class="hover:text-yellow-400 transition-colors">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl z-[101]">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full accent-bg text-white md:hidden z-[100] pt-16">
+            <a href="#home" class="block p-4 text-center hover:bg-white/10 mobile-nav-link">Home</a>
+            <a href="#call-for-papers" class="block p-4 text-center hover:bg-white/10 mobile-nav-link">Call For Papers</a>
+            <a href="#speakers" class="block p-4 text-center hover:bg-white/10 mobile-nav-link">Speakers</a>
+            <a href="#payment" class="block p-4 text-center hover:bg-white/10 mobile-nav-link">Payment</a>
+            <a href="#register" class="block p-4 text-center hover:bg-white/10 mobile-nav-link">Register</a>
+            <a href="#contact" class="block p-4 text-center hover:bg-white/10 mobile-nav-link">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative w-full h-[500px] lg:h-[600px] flex items-center justify-center text-center overflow-hidden">
+            <!-- Background Image and Overlay -->
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('img/icllle-banner-baruu.png');"></div>
+            <div class="absolute inset-0 bg-black/60"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 max-w-4xl p-6">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 leading-tight">
+                    The 5<sup class="text-lg align-super">th</sup> International Conference on Language, Linguistic, Literature, and Education
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-200 mb-8">
+                    “Digital Frontiers in Language, Literary Studies, and Pedagogy”
+                </p>
+                <a href="#register" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    Register Now!
+                </a>
+            </div>
+        </section>
+
+        <!-- Call For Papers Section -->
+        <section id="call-for-papers" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Call For Papers</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+                    <!-- Daftar topik -->
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Language in Media</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Multilingualism and Translanguaging</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Artificial Intelligence in Language</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Linguistic, Literature, and Education</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Massive Open Online Course</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Digital Literacy and Information Science</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Pop, Contemporary, and Digital Culture</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Gender and Identity</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Corpus-Based Language, Teaching and Research</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Oral Tradition and Local Culture</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Visual and Performing Arts</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Postcolonial Literature</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Hybrid Learning</div>
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow col-span-1 sm:col-span-2 lg:col-span-3">Other related topics</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speakers Section -->
+        <section id="speakers" class="py-20 secondary-bg">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Keynote Speakers</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center bg-white p-8 rounded-lg shadow-xl mb-16 max-w-5xl mx-auto">
+                    <img src="img/speaker/1.png" alt="Keynote Speaker" class="w-48 h-48 rounded-full object-cover mb-6 md:mb-0 md:mr-8 border-4 border-green-800 flex-shrink-0">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-3xl font-bold accent-text">Assoc. Prof. John Evar Strid, Ph.D.</h3>
+                        <p class="text-xl text-gray-500 mb-2">Northern Illinois University</p>
+                        <p class="text-gray-700 max-w-2xl"> USA </p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold text-center accent-text mb-8">Plenary Speakers</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <!-- Speaker Cards -->
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                        <img src="img/speaker/2.png" alt="Speaker 1" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
+                        <h4 class="font-bold text-lg accent-text">Assoc. Prof.  Dr. Ania Lian</h4>
+                        <p class="text-gray-500">Charles Darwin University</p>
+                           <p class="text-gray-700 max-w-2xl"> Australia </p>
+                    </div>
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                        <img src="img/speaker/3.png" alt="Speaker 2" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
+                        <h4 class="font-bold text-lg accent-text">Assoc. Prof. Dr. Mark Angelo</h4>
+                        <p class="text-gray-500">University Of Northern Philippines</p>
+                        <p class="text-gray-700 max-w-2xl"> Philippines </p>
+                    </div>
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                        <img src="img/speaker/4.png"" alt="Speaker 3" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
+                        <h4 class="font-bold text-lg accent-text">Assoc. Prof. Dr. Nik Aloesnita</h4>
+                        <p class="text-gray-500">Universiti Malaysia Pahang Al-Sultan Abdullah</p>
+                           <p class="text-gray-700 max-w-2xl"> Malaysia </p>
+                    </div>
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                        <img src="img/speaker/5.png" alt="Speaker 4" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
+                        <h4 class="font-bold text-lg accent-text">Prof. Dr. Nofi Marlina S</h4>
+                        <p class="text-gray-500">Cairo University</p>
+                        <p class="text-gray-700 max-w-2xl"> Indonesia </p>
+                    </div>
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 sm:col-span-2 md:col-span-1 lg:col-auto">
+                        <img src="img/speaker/6.png" alt="Speaker 5" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
+                        <h4 class="font-bold text-lg accent-text">Dr. M. Yuseano Kardiyansyah</h4>
+                        <p class="text-gray-500">Universitas Teknokrat Indonesia</p>
+                        <!-- <p class="text-gray-700 max-w-2xl"> Indonesia </p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Conference Schedule Section -->
+        <section id="conference-schedule" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Conference Schedule</h2>
+                <div class="flex flex-col lg:flex-row gap-8 items-start">
+                    <!-- Flyer Image -->
+                    <div class="w-full lg:w-1/2">
+                        <img src="img/ICLLLE 2025-min.png" alt="Conference Flyer" class="w-full h-auto object-contain rounded-lg shadow-lg">
+                    </div>
+                    <!-- PDF Viewer -->
+                    <!-- <div class="w-full lg:w-1/2 h-[600px] lg:h-auto lg:self-stretch">
+                        <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" width="100%" height="100%" class="rounded-lg shadow-lg border border-gray-300"></iframe>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Section -->
+        <section id="payment" class="py-20 secondary-bg">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Registration & Payment</h2>
+                <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-xl">
+                    <h3 class="font-bold text-2xl accent-text mb-4">Registration Fee</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>Indonesian Presenter: Rp. 350.000</li>
+                        <li>International Presenter: $25</li>
+                        <li>Indonesian Participant: Rp. 100.000</li>
+                        <li>International Participant: $15</li>
+                        <li>Indonesian Student as Presenter: Rp. 150.000</li>
+                        <li>Additional Presenter (Indonesian): Rp. 150.000</li>
+                        <li>Additional Presenter (International): $10</li>                     
+                    </ul>
+                    <h3 class="font-bold text-2xl accent-text mb-4">Payment Method</h3>
+                    <p class="text-gray-700 mb-2">Bank Transfer to:</p>
+                    <p class="text-gray-900 font-semibold">Mandiri Bank, Account No: 114-0077771809 </p>
+                    <p class="text-gray-900 font-semibold mb-6">a.n. Universitas Teknokrat Indonesia</p>
+                    <p class="text-gray-900 font-semibold mb-6">Swift Bank Code: BMRIIDJA</p>
+                    <h3 class="font-bold text-2xl accent-text mb-4">Important Dates</h3>
+                    <p class="text-gray-700 mb-6">Payment Deadline: <span class="font-bold text-red-600">October 25, 2025</span></p>
+
+                    <h3 class="font-bold text-2xl accent-text mb-4">Payment Receipt Upload</h3>
+                    <p class="text-gray-700 mb-4">After payment, please upload your receipt to confirm your registration.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPulaI_JcMo2j_OB80vKquNXi_pe00aha_Wo7NRc0GZNIlvA/viewform" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full text-center accent-bg text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity">
+                        <i class="fas fa-upload mr-2"></i> Upload Receipt
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publication Section -->
+        <section id="payment" class="py-20 bg-white">
+            <div class="container mx-auto px-6 ">
+                <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Publication</h2>
+                <div class="max-w-4xl mx-auto secondary-bg p-8 rounded-lg shadow-xl">
+                    <h3 class="font-bold text-2xl accent-text mb-4">- 
+                                Edited Book, IGI Global (Scopus)*
+                        <br>- ICLLLE Proceedings (e-ISSN: 2985-7023)
+                        <br>- Journals*</h3>
+                    <ul class=" text-gray-700 mb-6 space-y-2">
+                        <li>a. International Journal of Language Instruction (ICTE Press, Vietnam)</li>
+                        <li>b. Mahakarya (Sinta 3)</li>
+                        <li>c. Mathema (Sinta 3)</li>
+                        <li>d. Journal of Linguistics and Literature (Sinta 3)</li>
+                        <li>e. Teknosastik (Sinta 4)</li>
+                        <li>f. Journal of Research and Language Education (Sinta 4)</li>
+                        <li>g. Journal of English Language Teaching and Learning (Sinta 4)</li>  
+                        <li>j. Sport Science and Education Journal (Sinta 5)</li>                    
+                    <ul class=" text-gray-700 mb-6 space-y-2">
+                        <li><span class="accent-text">*</span>for selected papers and with additional charge</li>     
+                        </ul>               
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register Section -->
+        <section id="register" class="py-20 secondary-bg">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Join The Conference</h2>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <div class="bg-white rounded-lg shadow-xl p-8 w-full md:w-2/5 text-center transform hover:scale-105 transition-transform">
+                        <h3 class="text-3xl font-bold accent-text mb-4">As a Presenter</h3>
+                        <p class="text-gray-600 mb-6">Share your research with a global audience. Submit your abstract and become part of the academic discourse.</p>
+                        <a href="https://ocs.teknokrat.ac.id/index.php/icllle/icllle2023/user/account" class="accent-bg text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:opacity-90 transition-colors">Register as Presenter</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl p-8 w-full md:w-2/5 text-center transform hover:scale-105 transition-transform">
+                        <h3 class="text-3xl font-bold accent-text mb-4">As a Participant</h3>
+                        <p class="text-gray-600 mb-6">Gain valuable insights, network with peers, and learn from leading experts in the field. Join us for an enriching experience.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNoVlGeDovz4mHY6zUsbsb6d3vlToYOK0wkYH7OWeGrzIOIw/viewform" class="accent-bg text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:opacity-90 transition-colors">Register as Participant</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Get In Touch</h2>
+                <div class="flex flex-wrap -mx-4">
+                    <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                        <div class="bg-white p-8 rounded-lg shadow-lg h-full">
+                            <h3 class="text-2xl font-bold accent-text mb-6">Contact Information</h3>
+                            <div class="space-y-4 text-gray-700">
+                                <p><i class="fas fa-map-marker-alt w-6 accent-text"></i> <strong>Address:</strong><br>Jl. ZA. Pagar Alam No.9 -11, Labuhan Ratu, Kec. Kedaton, Kota Bandar Lampung, Lampung 35132</p>
+                                <p><i class="fas fa-phone w-6 accent-text"></i> <strong>Phone:</strong><br>Alvi Raihan Utami, M.Pd. +62-822-6934-8634<br>Dina Amelia, M.Hum. +62-853-8193-1945</p>
+                                <p><i class="fas fa-envelope w-6 accent-text"></i> <strong>Email:</strong><br><a href="mailto:icllle@teknokrat.ac.id" class="text-blue-600 hover:underline">icllle@teknokrat.ac.id</a></p>
+                                <p><i class="fab fa-instagram w-6 accent-text"></i> <strong>Instagram:</strong><br><a href="#" class="text-blue-600 hover:underline">icllle_teknokrat</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-4">
+                        <div class="rounded-lg shadow-lg overflow-hidden h-full min-h-[400px]">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.226620181534!2d105.2578159!3d-5.382383999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dadc7970b277%3A0x5b1fe57f83b6416c!2sTeknokrat%20Indonesia%20University!5e0!3m2!1sen!2sid!4v1753334804922!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Have Any Questions Section -->
+        <section class="accent-bg text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Have Any Questions?</h2>
+                <p class="mb-8 text-lg">About International Conference on Language Linguistic Literature and Education</p>
+                <a href="https://api.whatsapp.com/send?phone=6285381931945&text=Hello%2C%20I%20want%20to%20more%20info%20about%20the%205th%20ICLLLE" class="bg-yellow-500 text-cyan-800 px-8 py-3 font-semibold rounded-full hover:bg-gray-200 transition duration-300">
+                    CONTACT US
+                </a>
+            </div>
+        </section>
+
+        <!-- Our Partner Section -->
+        <section id="partners" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="relative overflow-hidden h-24 flex items-center">
+                    <div class="logo-slider">
+                        <!-- Ganti dengan path logo partner Anda -->
+                        <img src="img/partner/4ICU-2.png" alt="Partner 1" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/AppliedHE-2.png" alt="Partner 2" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/Coventry-2.png" alt="Partner 3" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/DAVAO-2.png" alt="Partner 4" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/dikti-2.png" alt="Partner 5" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/THE-2.png" alt="Partner 6" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/TUT-2.png" alt="Partner 7" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/UI-G-2.png" alt="Partner 8" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/UNPAD-2.png" alt="Partner 9" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/UPI-2.png" alt="Partner 10" class="inline-block mx-8 h-16 object-contain"> 
+                        <img src="img/partner/VANLANG-2.png" alt="Partner 11" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/weboRANK-2.png" alt="Partner 12" class="inline-block mx-8 h-16 object-contain">
+                        <!-- Duplikat untuk loop yang mulus -->
+                        <img src="img/partner/4ICU-2.png" alt="Partner 1" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/AppliedHE-2.png" alt="Partner 2" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/Coventry-2.png" alt="Partner 3" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/DAVAO-2.png" alt="Partner 4" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/dikti-2.png" alt="Partner 5" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/THE-2.png" alt="Partner 6" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/TUT-2.png" alt="Partner 7" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/UI-G-2.png" alt="Partner 8" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/UNPAD-2.png" alt="Partner 9" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/UPI-2.png" alt="Partner 10" class="inline-block mx-8 h-16 object-contain"> 
+                        <img src="img/partner/VANLANG-2.png" alt="Partner 11" class="inline-block mx-8 h-16 object-contain">
+                        <img src="img/partner/weboRANK-2.png" alt="Partner 12" class="inline-block mx-8 h-16 object-contain">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Scroll Up Button -->
+<button id="scrollUpBtn" class="bg-yellow-500 hover:bg-yellow-600 fixed bottom-6 right-6 text-white p-3 rounded-full shadow-lg z-50 hidden transition-opacity duration-300 hover:opacity-80">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+    <!-- Footer -->
+    <footer class="accent-bg text-white text-center p-6">
+        <p>&copy; 2025 ICLLLE Conference. All Rights Reserved.</p>
+        <p>Organized by Universitas Teknokrat Indonesia</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
