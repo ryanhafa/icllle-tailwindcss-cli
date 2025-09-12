@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICLLLE | International Conference on Language Linguistics Literature and Education</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon (Ganti dengan path yang benar) -->
+    <link rel="shortcut icon" type="image/png" href="img/ICLLLE.png">
+    
+    <!-- Tailwind CSS Output -->
+    <link href="output.css" rel="stylesheet">
+
+    <style>
+        /* Menambahkan style kustom untuk warna tema */
+        :root {
+            --accent-color: #125e3a; /* Warna utama ( hijau tua) */
+            --secondary-color: #eaf7f1; /* Warna latar belakang sekunder (biru sangat muda) */
+        }
+        .accent-bg { background-color: var(--accent-color); }
+        .accent-text { color: var(--accent-color); }
+        .secondary-bg { background-color: var(--secondary-color); }
+        /* #scrollUpBtn { background-color: var(--accent-color); } */
+    </style>
+</head>
+<body class="font-['Inter',_sans-serif] bg-white">
+
+    <!-- Header & Navbar -->
+    <header class="accent-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="index.html" class="flex items-center space-x-2">
+                <!-- Ganti 'img/icllle-lagi.png' dengan path logo Anda -->
+                <img src="img/logo-icllle-top.png" alt="ICLLLE Logo" class="h-12 w-auto" onerror="this.onerror=null;this.src='img/logo-icllle-top';">
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-yellow-400 transition-colors">Home</a>
+                <a href="proceedings.html" class="hover:text-yellow-400 transition-colors">Proceedings</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl z-[101]">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full accent-bg text-white md:hidden z-[100] pt-16">
+            <a href="index.html" class="block p-4 text-center hover:bg-white/10 mobile-nav-link">Home</a>
+            <a href="proceedings.html" class="block p-4 text-center hover:bg-white/10 mobile-nav-link">Proceedings</a>
+        </div>
+    </header>
+
+<main>
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Proceedings</h2>
+            <div class="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed space-y-6">
+                <p class="text-justify">
+                    Access the proceedings for the following conferences and download them in PDF format.
+                </p>
+
+                <!-- Proceeding 1 Section -->
+                <div class="bg-white p-8 rounded-lg shadow-xl mb-12">
+                    <h3 class="text-2xl font-bold accent-text mb-4">4th ICLLLE 2024 - "Transformative Trends: Navigating Language, Linguistics, Literature, and Education in the Smart Society 5.0 Era."</h3>
+                    <a href="/src/pdf/Proceedings ICLLLE 2024 - OK_compressed.pdf" class="text-blue-600 hover:underline" target="_blank">Download PDF</a>
+                    <!-- If you want to display the PDF inline instead of a download link -->
+                    <div class="mt-4">
+                        <iframe src="/src/pdf/Proceedings ICLLLE 2024 - OK_compressed.pdf" width="100%" height="600px" class="border-2 border-gray-200"></iframe>
+                    </div>
+                </div>
+                                <!-- Proceeding 2 Section -->
+                <div class="bg-white p-8 rounded-lg shadow-xl mb-12">
+                    <h3 class="text-2xl font-bold accent-text mb-4">3rd ICLLLE 2023 - "Digital Transformation of Learning adn Research on Language, Linguistics, Literature, adn Education"</h3>
+                    <a href="/src/pdf/THE 3RD ICLLLE PROCEEDINGS_2023_compressed.pdf" class="text-blue-600 hover:underline" target="_blank">Download PDF</a>
+                    <!-- If you want to display the PDF inline instead of a download link -->
+                    <div class="mt-4">
+                        <iframe src="/src/pdf/THE 3RD ICLLLE PROCEEDINGS_2023_compressed.pdf" width="100%" height="600px" class="border-2 border-gray-200"></iframe>
+                    </div>
+                </div>
+                                <!-- Proceeding 3 Section -->
+                <div class="bg-white p-8 rounded-lg shadow-xl mb-12">
+                    <h3 class="text-2xl font-bold accent-text mb-4">2nd ICLLLE 2022 - "Envisioning Hybrid Learning and 
+Interdisciplinary Research on Language, Linguistics, Literature, and Education during The Post
+Pandemic of Covid-19"</h3>
+                    <a href="/src/pdf/Proceedings - ICLLLE - 2022_compressed.pdf" class="text-blue-600 hover:underline" target="_blank">Download PDF</a>
+                    <!-- If you want to display the PDF inline instead of a download link -->
+                    <div class="mt-4">
+                        <iframe src="/src/pdf/Proceedings - ICLLLE - 2022_compressed.pdf" width="100%" height="600px" class="border-2 border-gray-200"></iframe>
+                    </div>
+                </div>
+                                <!-- Proceeding 4 Section -->
+                <div class="bg-white p-8 rounded-lg shadow-xl mb-12">
+                    <h3 class="text-2xl font-bold accent-text mb-4">1st ICLLLE 2021 - "Promoting Digital Learning and Research Collaboration on Language, Linguistics, and Literature"</h3>
+                    <a href="/src/pdf/PROCEEDINGS OF ICLLLE 2021_3L_compressed.pdf" class="text-blue-600 hover:underline" target="_blank">Download PDF</a>
+                    <!-- If you want to display the PDF inline instead of a download link -->
+                    <div class="mt-4">
+                        <iframe src="/src/pdf/PROCEEDINGS OF ICLLLE 2021_3L_compressed.pdf" width="100%" height="600px" class="border-2 border-gray-200"></iframe>
+                    </div>
+                </div>
+
+                <!-- Add more Proceedings sections as needed -->
+            </div>
+        </div>
+    </section>
+</main>
+
+   
+    <!-- Scroll Up Button -->
+<button id="scrollUpBtn" class="bg-yellow-500 hover:bg-yellow-600 fixed bottom-6 right-6 text-white p-3 rounded-full shadow-lg z-50 hidden transition-opacity duration-300 hover:opacity-80">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+    <!-- Footer -->
+    <footer class="accent-bg text-white text-center p-6">
+        <p>&copy; 2025 ICLLLE Conference. All Rights Reserved.</p>
+        <p>Organized by Universitas Teknokrat Indonesia</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
