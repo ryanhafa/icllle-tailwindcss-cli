@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // Menangani klik tombol untuk membuka gambar
-    openModalBtn1.addEventListener('click', () => openModal('../img/1.jpg'));
-    openModalBtn2.addEventListener('click', () => openModal('../img/2.jpg'));
-    openModalBtn3.addEventListener('click', () => openModal('../img/3.jpg'));
+    openModalBtn1.addEventListener('click', () => openModal("/img/jhon.jpg"));
+    openModalBtn2.addEventListener('click', () => openModal("/img/dik.jpg"));
+    openModalBtn3.addEventListener('click', () => openModal("/img/nofi.jpg"));
     // openModalBtn4.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+4'));
     // openModalBtn5.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+5'));
     // openModalBtn6.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+6'));
