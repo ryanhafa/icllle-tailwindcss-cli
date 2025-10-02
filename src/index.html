@@ -29,7 +29,12 @@
         .accent-text { color: var(--accent-color); }
         .secondary-bg { background-color: var(--secondary-color); }
         /* #scrollUpBtn { background-color: var(--accent-color); } */
+
+           .modal-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
     </style>
+
 </head>
 <body class="font-['Inter',_sans-serif] bg-white">
 
@@ -152,6 +157,7 @@
                         <h3 class="text-3xl font-bold accent-text">Assoc. Prof. John Evar Strid, Ph.D.</h3>
                         <p class="text-xl text-gray-500 mb-2">Northern Illinois University</p>
                         <p class="text-gray-700 max-w-2xl"> USA </p>
+                        <button id="openModalBtn1" class= "bg-green-800 text-white text-xs px-3 py-2 font-semibold rounded-full hover:bg-yellow-400 transition duration-300">Open abstract</button>
                     </div>
                 </div>
 
@@ -171,16 +177,18 @@
                         <!-- <p class="text-gray-700 max-w-2xl"> Philippines </p> -->
                     </div>
                     <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
-                        <img src="img/speaker/4.png"" alt="Speaker 3" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
+                        <img src="img/speaker/4.png" alt="Speaker 3" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
                         <h4 class="font-bold text-lg accent-text">Assoc. Prof. Dr. Nik Aloesnita</h4>
                         <p class="text-gray-500">Universiti Malaysia Pahang Al-Sultan Abdullah</p>
                            <p class="text-gray-700 max-w-2xl"> Malaysia </p>
+                           <button id="openModalBtn2" class= "bg-green-800 text-white text-xs px-3 py-2 font-semibold rounded-full hover:bg-yellow-400 transition duration-300">Open abstract</button>
                     </div>
                     <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
                         <img src="img/speaker/prof nofi.png" alt="Speaker 4" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
                         <h4 class="font-bold text-lg accent-text">Prof. Dr. Nofi Marlina S</h4>
                         <p class="text-gray-500">Universitas Negeri Jakarta</p>
                         <p class="text-gray-700 max-w-2xl"> Indonesia </p>
+                        <button id="openModalBtn3" class= "bg-green-800 text-white text-xs px-3 py-2 font-semibold rounded-full hover:bg-yellow-400 transition duration-300">Open abstract</button>
                     </div>
                     <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 sm:col-span-2 md:col-span-1 lg:col-auto">
                         <img src="img/speaker/6.png" alt="Speaker 5" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
@@ -192,11 +200,21 @@
             </div>
         </section>
         
+ <!-- Modal -->
+  <div id="imageModal" class="fixed inset-0 flex items-center justify-center hidden modal-overlay">
+    <div class="bg-white p-4 rounded-lg shadow-lg max-w-3xl w-full relative">
+      <button id="closeModalBtn" class="absolute top-0 right-0 p-2 text-gray-500 hover:text-gray-700 focus:outline-none">
+        &times;
+      </button>
+      <img id="modalImage" src="" alt="Gambar Modal" class="max-w-full max-h-[80vh] object-contain mx-auto rounded-lg">
+    </div>
+  </div>
+
 <!-- Important dates -->
 <section id="important-date" class="py-20 bg-white">
-  <div class="container mx-auto px-6">
+  <div class="container mx-auto px-6" >
     <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Important Dates</h2>
-    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-xl">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-xl" style="background-image: url('/src/img/dates6.jpg'); background-size: cover; background-position: center;">
       
       <ul class="divide-y divide-gray-200 text-gray-700">
             <li class="py-3 flex flex-col md:flex-row md:items-center md:gap-x-6">

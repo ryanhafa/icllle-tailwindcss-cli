@@ -62,3 +62,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+    // Referensi tombol dan modal
+    const openModalBtn1 = document.getElementById('openModalBtn1');
+    const openModalBtn2 = document.getElementById('openModalBtn2');
+    const openModalBtn3 = document.getElementById('openModalBtn3');
+    const openModalBtn4 = document.getElementById('openModalBtn4');
+    const openModalBtn5 = document.getElementById('openModalBtn5');
+    const openModalBtn6 = document.getElementById('openModalBtn6');
+    const imageModal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    // Fungsi untuk membuka modal dengan gambar tertentu
+    const openModal = (imageUrl) => {
+      modalImage.src = imageUrl;
+      imageModal.classList.remove('hidden');
+    };
+
+    // Menangani klik tombol untuk membuka gambar
+    openModalBtn1.addEventListener('click', () => openModal('img/1.jpg'));
+    openModalBtn2.addEventListener('click', () => openModal('img/2.jpg'));
+    openModalBtn3.addEventListener('click', () => openModal('img/3.jpg'));
+    // openModalBtn4.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+4'));
+    // openModalBtn5.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+5'));
+    // openModalBtn6.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+6'));
+
+    // Menangani klik untuk menutup modal
+    closeModalBtn.addEventListener('click', () => {
+      imageModal.classList.add('hidden');
+    });
+
+    // Menutup modal jika mengklik area luar modal
+    window.addEventListener('click', (event) => {
+      if (event.target === imageModal) {
+        imageModal.classList.add('hidden');
+      }
+    });
