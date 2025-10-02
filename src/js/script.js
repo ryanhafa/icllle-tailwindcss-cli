@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // Menangani klik tombol untuk membuka gambar
-    openModalBtn1.addEventListener('click', () => openModal("/img/jhon.jpg"));
+    openModalBtn1.addEventListener('click', () => openModal("/img/john.jpg"));
     openModalBtn2.addEventListener('click', () => openModal("/img/dik.jpg"));
     openModalBtn3.addEventListener('click', () => openModal("/img/nofi.jpg"));
     // openModalBtn4.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+4'));
