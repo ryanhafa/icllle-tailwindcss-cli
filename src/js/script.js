@@ -66,9 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const openModalBtn1 = document.getElementById('openModalBtn1');
     const openModalBtn2 = document.getElementById('openModalBtn2');
     const openModalBtn3 = document.getElementById('openModalBtn3');
-    const openModalBtn4 = document.getElementById('openModalBtn4');
-    const openModalBtn5 = document.getElementById('openModalBtn5');
-    const openModalBtn6 = document.getElementById('openModalBtn6');
+    // const openModalBtn4 = document.getElementById('openModalBtn4');
+    // const openModalBtn5 = document.getElementById('openModalBtn5');
+    // const openModalBtn6 = document.getElementById('openModalBtn6');
     const imageModal = document.getElementById('imageModal');
     const modalImage = document.getElementById('modalImage');
     const closeModalBtn = document.getElementById('closeModalBtn');
