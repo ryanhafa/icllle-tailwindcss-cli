@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const openModalBtn1 = document.getElementById('openModalBtn1');
     const openModalBtn2 = document.getElementById('openModalBtn2');
     const openModalBtn3 = document.getElementById('openModalBtn3');
-    // const openModalBtn4 = document.getElementById('openModalBtn4');
+    const openModalBtn4 = document.getElementById('openModalBtn4');
     // const openModalBtn5 = document.getElementById('openModalBtn5');
     // const openModalBtn6 = document.getElementById('openModalBtn6');
     const imageModal = document.getElementById('imageModal');
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     openModalBtn1.addEventListener('click', () => openModal("/img/john.jpg"));
     openModalBtn2.addEventListener('click', () => openModal("/img/dik.jpg"));
     openModalBtn3.addEventListener('click', () => openModal("/img/nofi.jpg"));
-    // openModalBtn4.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+4'));
+    openModalBtn4.addEventListener('click', () => openModal("/img/Yuseano.jpg"));
     // openModalBtn5.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+5'));
     // openModalBtn6.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+6'));
 
