@@ -22,12 +22,14 @@
     <style>
         /* Menambahkan style kustom untuk warna tema */
         :root {
-            --accent-color: #125e3a; /* Warna utama ( hijau tua) */
-            --secondary-color: #eaf7f1; /* Warna latar belakang sekunder (biru sangat muda) */
+            --accent-color: #003c8d; /* Warna utama (biru tua) */
+            --accent-hover: #0a4a9e; /* Warna utama saat hover */
+            --secondary-color: #e9f0fa; /* Warna latar belakang sekunder (biru sangat muda) */
         }
         .accent-bg { background-color: var(--accent-color); }
         .accent-text { color: var(--accent-color); }
         .secondary-bg { background-color: var(--secondary-color); }
+        .accent-border { border-color: var(--accent-color); }
         /* #scrollUpBtn { background-color: var(--accent-color); } */
     </style>
 </head>
@@ -216,13 +218,13 @@
 
     
     <!-- Scroll Up Button -->
-<button id="scrollUpBtn" class="bg-yellow-500 hover:bg-yellow-600 fixed bottom-6 right-6 text-white p-3 rounded-full shadow-lg z-50 hidden transition-opacity duration-300 hover:opacity-80">
+<button id="scrollUpBtn" class="btn btn-accent btn-icon shadow-lg fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-50 hidden hover:scale-110" aria-label="Kembali ke atas">
     <i class="fas fa-arrow-up"></i>
 </button>
 
     <!-- Footer
     <footer class="accent-bg text-white text-center p-6">
-        <p>&copy; 2025 ICLLLE Conference. All Rights Reserved.</p>
+        <p>&copy; 2026 ICLLLE Conference. All Rights Reserved.</p>
         <p>Organized by Universitas Teknokrat Indonesia</p>
     </footer> -->
     <script src="js/script.js"></script>

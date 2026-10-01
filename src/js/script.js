@@ -79,22 +79,32 @@ document.addEventListener('DOMContentLoaded', function () {
       imageModal.classList.remove('hidden');
     };
 
-    // Menangani klik tombol untuk membuka gambar
-    openModalBtn1.addEventListener('click', () => openModal("/img/john.jpg"));
-    openModalBtn2.addEventListener('click', () => openModal("/img/dik.jpg"));
-    openModalBtn3.addEventListener('click', () => openModal("/img/nofi.jpg"));
-    openModalBtn4.addEventListener('click', () => openModal("/img/Yuseano.jpg"));
-    // openModalBtn5.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+5'));
-    // openModalBtn6.addEventListener('click', () => openModal('https://via.placeholder.com/800x600?text=Gambar+6'));
+    if (imageModal && modalImage) {
+      // Menangani klik tombol untuk membuka gambar
+      const openModalButtons = [
+        [openModalBtn1, "/img/john.jpg"],
+        [openModalBtn2, "/img/dik.jpg"],
+        [openModalBtn3, "/img/nofi.jpg"],
+        [openModalBtn4, "/img/Yuseano.jpg"],
+      ];
 
-    // Menangani klik untuk menutup modal
-    closeModalBtn.addEventListener('click', () => {
-      imageModal.classList.add('hidden');
-    });
+      openModalButtons.forEach(([button, imageUrl]) => {
+        if (button) {
+          button.addEventListener('click', () => openModal(imageUrl));
+        }
+      });
 
-    // Menutup modal jika mengklik area luar modal
-    window.addEventListener('click', (event) => {
-      if (event.target === imageModal) {
-        imageModal.classList.add('hidden');
+      // Menangani klik untuk menutup modal
+      if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', () => {
+          imageModal.classList.add('hidden');
+        });
       }
-    });
+
+      // Menutup modal jika mengklik area luar modal
+      window.addEventListener('click', (event) => {
+        if (event.target === imageModal) {
+          imageModal.classList.add('hidden');
+        }
+      });
+    }

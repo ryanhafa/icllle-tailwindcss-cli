@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICLLLE | International Conference on Language Linguistics Literature and Education</title>
+    <title>ICLLLE 2026 | 6th International Conference on Language Linguistics Literature and Education</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +22,14 @@
     <style>
         /* Menambahkan style kustom untuk warna tema */
         :root {
-            --accent-color: #125e3a; /* Warna utama ( hijau tua) */
-            --secondary-color: #eaf7f1; /* Warna latar belakang sekunder (biru sangat muda) */
+            --accent-color: #003c8d; /* Warna utama (biru tua) */
+            --accent-hover: #0a4a9e; /* Warna utama saat hover */
+            --secondary-color: #e9f0fa; /* Warna latar belakang sekunder (biru sangat muda) */
         }
         .accent-bg { background-color: var(--accent-color); }
         .accent-text { color: var(--accent-color); }
         .secondary-bg { background-color: var(--secondary-color); }
+        .accent-border { border-color: var(--accent-color); }
         /* #scrollUpBtn { background-color: var(--accent-color); } */
 
            .modal-overlay {
@@ -55,7 +57,7 @@
                 <!-- <a href="conferences-repository.html" class="hover:text-yellow-400 transition-colors">Conferences Repository</a> -->
                 <a href="proceedings.html" class="hover:text-yellow-400 transition-colors">Proceedings</a>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden text-2xl z-[101]">
+            <button id="mobile-menu-button" class="md:hidden h-11 w-11 flex items-center justify-center rounded-md text-2xl z-[101] focus:outline-none" aria-label="Buka menu navigasi">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
@@ -76,19 +78,25 @@
         <!-- Hero Section -->
         <section id="home" class="relative w-full h-[500px] lg:h-[600px] flex items-center justify-center text-center overflow-hidden">
             <!-- Background Image and Overlay -->
-            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('img/header-top.png');"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('img/bannerv2.jpg');"></div>
             <div class="absolute inset-0 bg-black/60"></div>
 
             <!-- Content -->
             <div class="relative z-10 max-w-4xl p-6">
+                <p class="text-sm md:text-base font-semibold tracking-widest text-yellow-400 uppercase mb-3">The 6th ICLLLE 2026</p>
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 leading-tight">
-                    The 5<sup class="text-lg align-super">th</sup> International Conference on Language, Linguistics, Literature, and Education
+                    The 6<sup class="text-lg align-super">th</sup> International Conference on Language, Linguistics, Literature, and Education
                 </h1>
                 
-                <p class="text-lg md:text-xl lg:text-2xl text-gray-200 mb-8">
-                    “Digital Frontiers in Language, Literary Studies, and Pedagogy”
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-200 mb-3">
+                    “Artificial Intelligence and Emerging Technologies: Transforming Language, Literature, Linguistics, and Education for the Future.”
                 </p>
-                <a href="#register" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+
+                <p class="text-base md:text-lg text-yellow-400 font-semibold mb-8">
+                    <i class="fas fa-calendar-alt mr-2"></i>November 26, 2026 &nbsp;|&nbsp; <i class="fas fa-video mr-2"></i>ZOOM
+                </p>
+
+                <a href="#register" class="btn btn-accent shadow-lg hover:scale-105 hover:shadow-xl">
                     Register Now!
                 </a>
             </div>
@@ -97,14 +105,14 @@
 <!-- Welcome Section -->
 <section id="welcome" class="py-20 bg-white">
   <div class="container mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Welcome to The 5th ICLLLE 2025!</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Welcome to The 6th ICLLLE 2026!</h2>
     <div class="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed space-y-6">
       <p class="text-justify">
-        We are proud to present this international conference, organized by the Faculty of Arts and Education, Universitas Teknokrat Indonesia. This year marks the fifth ICLLLE, following the success of the 1st, 2nd, 3rd, and 4th conferences. With the theme “Digital Frontiers in Language, Literary Studies, and Pedagogy,” the conference explores a wide range of innovative sub-themes, from artificial intelligence in language to contemporary digital culture. Our goal is to facilitate productive academic dialogue, enrich teaching methodologies, and provide publication opportunities for researchers. Hosted in collaboration not only with regional partners but also with international institutions, ICLLLE 2025 warmly welcomes participants from across the globe. We wish you insightful discussions, fruitful collaborations, and inspiring explorations into the digital frontiers of the social sciences and humanities!
+        We are proud to present this international conference, organized by the Faculty of Arts and Education, Universitas Teknokrat Indonesia. This year marks the sixth ICLLLE, following the success of the 1st, 2nd, 3rd, 4th, and 5th conferences. With the theme “Artificial Intelligence and Emerging Technologies: Transforming Language, Literature, Linguistics, and Education for the Future,” the conference explores how emerging technologies are reshaping language, literary studies, linguistics, and education, from artificial intelligence in language to digital literacy and contemporary digital culture. Our goal is to facilitate productive academic dialogue, enrich teaching methodologies, and provide publication opportunities for researchers. Held on November 26, 2026 through ZOOM and hosted in collaboration not only with regional partners but also with international institutions, ICLLLE 2026 warmly welcomes participants from across the globe. We wish you insightful discussions, fruitful collaborations, and inspiring explorations into the future of the social sciences and humanities!
       </p>
     </div>
-    </div>
-  </section>    
+  </div>
+</section>    
 
 <!-- Flayer Section -->
 <section id="flayer-section" class="py-20 secondary-bg">
@@ -113,7 +121,7 @@
       <!-- Flyer Image -->
       <div class="w-full max-w-6xl">
         <img 
-          src="img/flayer icllle 2025 last fixxxx.jpeg" 
+          src="img/flayer2026fix.jpeg" 
           alt="Conference Flyer" 
           class="w-full h-auto object-contain rounded-lg shadow-lg"
         >
@@ -121,6 +129,7 @@
     </div>
   </div>
 </section>
+
 
         <!-- Call For Papers Section -->
         <section id="call-for-papers" class="py-20">
@@ -133,6 +142,7 @@
                     <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">AI in language, linguistic, literature and
   Education</div>
                     <!-- <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Linguistics, Literature, and Education</div> -->
+                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Hybrid Learning</div>
                     <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Massive Open Online Course</div>
                     <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Digital Literacy and Information Science</div>
                     <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Pop, Contemporary, and Digital Culture</div>
@@ -141,7 +151,6 @@
                     <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Oral Tradition and Local Culture</div>
                     <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Visual and Performing Arts</div>
                     <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Postcolonial Literature</div>
-                    <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow">Hybrid Learning</div>
                     <div class="accent-bg text-white rounded-full py-3 px-5 text-center shadow col-span-1 sm:col-span-2 lg:col-span-3">Other related topics</div>
                 </div>
             </div>
@@ -152,61 +161,60 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Keynote Speaker</h2>
                 <div class="flex flex-col md:flex-row items-center justify-center bg-white p-8 rounded-lg shadow-xl mb-16 max-w-5xl mx-auto">
-                    <img src="img/speaker/1.png" alt="Keynote Speaker" class="w-48 h-48 rounded-full object-cover mb-6 md:mb-0 md:mr-8 border-4 border-green-800 flex-shrink-0">
+                    <div class="avatar-frame accent-border w-48 h-48 mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+                        <img src="img/speaker/keynote.png" alt="Dr. Andrew O' Baoill" class="avatar-img avatar-img-shift">
+                    </div>
                     <div class="text-center md:text-left">
-                        <h3 class="text-3xl font-bold accent-text">Assoc. Prof. John Evar Strid, Ph.D.</h3>
-                        <p class="text-xl text-gray-500 mb-2">Northern Illinois University</p>
-                        <p class="text-gray-700 max-w-2xl"> USA </p>
-                        <button id="openModalBtn1" class= "bg-green-800 text-white text-xs px-3 py-2 font-semibold rounded-full hover:bg-yellow-400 transition duration-300">Open abstract</button>
+                        <h3 class="text-3xl font-bold accent-text">Dr. Andrew O' Baoill</h3>
+                        <p class="text-xl text-gray-500 mb-2">University of Galway</p>
+                        <p class="text-gray-700 max-w-2xl"> Ireland </p>
                     </div>
                 </div>
 
                 <h3 class="text-2xl font-bold text-center accent-text mb-8">Plenary Speakers</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Speaker Cards -->
                     <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
-                        <img src="img/speaker/2.png" alt="Speaker 1" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
-                        <h4 class="font-bold text-lg accent-text">Assoc. Prof.  Dr. Ania Lian</h4>
-                        <p class="text-gray-500">Charles Darwin University</p>
-                           <p class="text-gray-700 max-w-2xl"> Australia </p>
+                        <div class="avatar-frame accent-border w-32 h-32 mx-auto mb-4">
+                            <img src="img/speaker/plenary-1.png" alt="Joseph B. Campit, Ed.D." class="avatar-img avatar-img-shift">
+                        </div>
+                        <h4 class="font-bold text-lg accent-text">Joseph B. Campit, Ed.D.</h4>
+                        <p class="text-gray-500">Pangasinan State University</p>
+                        <p class="text-gray-700 max-w-2xl"> Philippines </p>
                     </div>
                     <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
-                        <img src="img/speaker/3.png" alt="Speaker 2" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
-                        <h4 class="font-bold text-lg accent-text">Assoc. Prof. Dr. Mark Angelo</h4>
-                        <p class="text-gray-500">University Of Northern Philippines</p>
-                        <!-- <p class="text-gray-700 max-w-2xl"> Philippines </p> -->
-                    </div>
-                    <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
-                        <img src="img/speaker/4.png" alt="Speaker 3" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
-                        <h4 class="font-bold text-lg accent-text">Assoc. Prof. Dr. Nik Aloesnita</h4>
-                        <p class="text-gray-500">Universiti Malaysia Pahang Al-Sultan Abdullah</p>
-                           <p class="text-gray-700 max-w-2xl"> Malaysia </p>
-                           <button id="openModalBtn2" class= "bg-green-800 text-white text-xs px-3 py-2 font-semibold rounded-full hover:bg-yellow-400 transition duration-300">Open abstract</button>
-                    </div>
-                    <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
-                        <img src="img/speaker/prof nofi.png" alt="Speaker 4" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
-                        <h4 class="font-bold text-lg accent-text">Prof. Dr. Nofi Marlina S</h4>
-                        <p class="text-gray-500">Universitas Negeri Jakarta</p>
+                        <div class="avatar-frame accent-border w-32 h-32 mx-auto mb-4">
+                            <img src="img/speaker/plenary-2.png" alt="Dr. Anuncius Gumawang Jati, M.A." class="avatar-img">
+                        </div>
+                        <h4 class="font-bold text-lg accent-text">Dr. Anuncius Gumawang Jati, M.A.</h4>
+                        <p class="text-gray-500">Universitas Katolik Parahyangan</p>
                         <p class="text-gray-700 max-w-2xl"> Indonesia </p>
-                        <button id="openModalBtn3" class= "bg-green-800 text-white text-xs px-3 py-2 font-semibold rounded-full hover:bg-yellow-400 transition duration-300">Open abstract</button>
                     </div>
-                    <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 sm:col-span-2 md:col-span-1 lg:col-auto">
-                        <img src="img/speaker/6.png" alt="Speaker 5" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-800">
-                        <h4 class="font-bold text-lg accent-text">Dr. M. Yuseano Kardiansyah</h4>
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                        <div class="avatar-frame accent-border w-32 h-32 mx-auto mb-4">
+                            <img src="img/speaker/plenary-3.png" alt="Prof. Dr. Heny Setiyawati, M.Si." class="avatar-img avatar-img-shift">
+                        </div>
+                        <h4 class="font-bold text-lg accent-text">Prof. Dr. Heny Setiyawati, M.Si.</h4>
+                        <p class="text-gray-500">Universitas Negeri Semarang</p>
+                        <p class="text-gray-700 max-w-2xl"> Indonesia </p>
+                    </div>
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                        <div class="avatar-frame accent-border w-32 h-32 mx-auto mb-4">
+                            <img src="img/speaker/plenary-4.png" alt="Dr. Laila Ulsi Qodriani, M.A." class="avatar-img">
+                        </div>
+                        <h4 class="font-bold text-lg accent-text">Dr. Laila Ulsi Qodriani, M.A.</h4>
                         <p class="text-gray-500">Universitas Teknokrat Indonesia</p>
-                        <button id="openModalBtn4" class= "bg-green-800 text-white text-xs px-3 py-2 font-semibold rounded-full hover:bg-yellow-400 transition duration-300">Open abstract</button>
-                        <!-- <p class="text-gray-700 max-w-2xl"> Indonesia </p> -->
+                        <p class="text-gray-700 max-w-2xl"> Indonesia </p>
                     </div>
                 </div>
             </div>
         </section>
+
         
  <!-- Modal -->
   <div id="imageModal" class="fixed inset-0 flex items-center justify-center hidden modal-overlay">
     <div class="bg-white p-4 rounded-lg shadow-lg max-w-3xl w-full relative">
-      <button id="closeModalBtn" class="absolute top-0 right-0 p-2 text-gray-500 hover:text-gray-700 focus:outline-none">
-        &times;
-      </button>
+      <button id="closeModalBtn" class="absolute top-2 right-2 h-10 w-10 flex items-center justify-center rounded-full text-2xl leading-none text-gray-500 hover:bg-gray-100 hover:text-gray-700 focus:outline-none" aria-label="Tutup">&times;</button>
       <img id="modalImage" src="" alt="Gambar Modal" class="max-w-full max-h-[80vh] object-contain mx-auto rounded-lg">
     </div>
   </div>
@@ -215,28 +223,21 @@
 <section id="important-date" class="py-20 bg-white">
   <div class="container mx-auto px-6" >
     <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Important Dates</h2>
-    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-xl" style="background-image: url('img/dates6.jpg'); background-size: cover; background-position: center;">
+    <!-- <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-xl" style="background-image: url('img/dates6.jpg'); background-size: cover; background-position: center;"> -->
+    <div class="max-w-4xl mx-auto secondary-bg p-8 rounded-lg shadow-xl border-t-4 accent-border">
       
       <ul class="divide-y divide-gray-200 text-gray-700">
-            <li class="py-3 flex flex-col md:flex-row md:items-center md:gap-x-6">
+            <li class="py-3 flex flex-col md:flex-row md:items-center md:justify-between md:gap-x-6">
+                <span>Abstract Submission Deadline</span>
+                <span class="font-bold">September 15, 2026</span>
+            </li>
+            <li class="py-3 flex flex-col md:flex-row md:items-center md:justify-between md:gap-x-6">
+                <span>Abstract Acceptance Announcement</span>
+                <span class="font-bold">September 25, 2026</span>
+            </li>
+            <li class="py-3 flex flex-col md:flex-row md:items-center md:justify-between md:gap-x-6">
                 <span>Full Paper Submission Deadline</span>
-                <span class="line-through">October 1, 2025</span>
-                <span class="font-bold">November 7, 2025</span>
-            </li>
-            <li class="py-3 flex flex-col md:flex-row md:items-center md:gap-x-6">
-                <span>Full Paper Acceptance Announcement</span>
-                <span class="line-through">October 15, 2025</span>
-                <span class="font-bold">November 14, 2025</span>
-            </li>
-            <li class="py-3 flex flex-col md:flex-row md:items-center md:gap-x-6">
-                <span>Revised Paper Submission</span>
-                <span class="line-through">October 20, 2025</span>
-                <span class="font-bold">November 21, 2025</span>
-            </li>
-            <li class="py-3 flex flex-col md:flex-row md:items-center md:gap-x-6">
-                <span>Payment Deadline</span>
-                <span class="line-through">October 25, 2025</span>
-                <span class="font-bold">November 21, 2025</span>
+                <span class="font-bold">October 15, 2026</span>
             </li>
         </ul>
     </div>
@@ -254,9 +255,7 @@
                         <li>International Presenter: $25</li>
                         <li>Indonesian Participant: Rp. 100.000</li>
                         <li>International Participant: $15</li>
-                        <li>Indonesian Student as Presenter: Rp. 150.000</li>
-                        <li>Additional Presenter (Indonesian): Rp. 150.000</li>
-                        <li>Additional Presenter (International): $10</li>                     
+                        <li>Additional Presenter &amp; Certificate: Rp. 50.000</li>
                     </ul>
                     <h3 class="font-bold text-2xl accent-text mb-4">Payment Method</h3>
                     <p class="text-gray-700 mb-2">Bank Transfer to:</p>
@@ -266,35 +265,33 @@
                     <h3 class="font-bold text-2xl accent-text mb-4">Note:</h3>
                     <ul class="list-disc list-inside text-gray-700 space-y-2">
                         <li>Payment for presenters will be made after receiving the Letter of Acceptance (LoA).</li>
-                         <li>Payment for participants will be made through the <a href="https://docs.google.com/forms/d/e/1FAIpQLScp7fvYz69DiARnBIomYYPyrlW6UY_GS-N-OuoM7XM9ddoLfA/viewform" target="_blank" class="text-blue-600">participant registration form.</a></li>
+                         <li>Payment for participants will be made through the <a href="https://docs.google.com/forms/d/e/1FAIpQLScp7fvYz69DiARnBIomYYPyrlW6UY_GS-N-OuoM7XM9ddoLfA/viewform" target="_blank" class="accent-text hover:underline">participant registration form.</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <!-- Publication Section -->
-        <section id="payment" class="py-20 bg-white">
+        <section id="publication" class="py-20 bg-white">
             <div class="container mx-auto px-6 ">
                 <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Publication</h2>
                 <div class="max-w-4xl mx-auto secondary-bg p-8 rounded-lg shadow-xl">
                     <h3 class="font-bold text-2xl accent-text mb-4">- 
-                                Edited Book, IGI Global (Scopus)*
-                        <br>- ICLLLE Proceedings (e-ISSN: 2985-7023)
+                                ICLLLE Proceedings (e-ISSN: 2985-7023)
                         <br>- Journals*</h3>
                     <ul class=" text-gray-700 mb-6 space-y-2">
                         <li>a. International Journal of Language Instruction (ICTE Press, Vietnam)</li>
                         <li>b. Mahakarya (Sinta 3)</li>
                         <li>c. Mathema (Sinta 3)</li>
-                        <li>d. Journal of linguistics and Literature (Sinta 3)</li>
+                        <li>d. Jurnal Ilmiah Matematika Realistik (Sinta 4)</li>
                         <li>e. Teknosastik (Sinta 4)</li>
                         <li>f. Journal of Research and Language Education (Sinta 4)</li>
                         <li>g. Journal of English Language Teaching and Learning (Sinta 4)</li>  
                         <li>h. Pioneer: Journal of Language and Literature (Sinta 4)</li>  
-                        <li>i. Sport Science and Education Journal (Sinta 5)</li>                    
+                    </ul>
                     <ul class=" text-gray-700 mb-6 space-y-2">
                         <li><span class="accent-text">*</span>for selected papers and with additional charge</li>     
-                        </ul>               
-                    </ul>
+                    </ul>               
                 </div>
             </div>
         </section>
@@ -302,7 +299,8 @@
 <!-- Register Section -->
 <section id="register" class="py-20 secondary-bg">
   <div class="container mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-12">Join The Conference</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-center accent-text mb-4">Join The Conference</h2>
+    <p class="text-center text-lg text-gray-700 mb-12">The 6th ICLLLE 2026 &middot; November 26, 2026 &middot; Held through ZOOM</p>
     <div class="flex flex-wrap justify-center gap-8">
       
       <!-- Presenter -->
@@ -313,7 +311,7 @@
         </p>
         <a 
           href="https://ocs.teknokrat.ac.id/index.php/icllle/ICLLLE/user/account" target="_blank" 
-          class="inline-block w-full sm:w-auto accent-bg text-white font-bold py-3 px-6 rounded-full text-base sm:text-lg shadow-lg hover:opacity-90 transition-colors text-center"
+          class="btn btn-primary w-full sm:w-auto"
         >
           Register as Presenter
         </a>
@@ -327,16 +325,18 @@
         </p>
         <a 
           href="https://docs.google.com/forms/d/e/1FAIpQLScp7fvYz69DiARnBIomYYPyrlW6UY_GS-N-OuoM7XM9ddoLfA/viewform" target="_blank" 
-          class="inline-block w-full sm:w-auto accent-bg text-white font-bold py-3 px-6 rounded-full text-base sm:text-lg shadow-lg hover:opacity-90 transition-colors text-center"
+          class="btn btn-primary w-full sm:w-auto"
         >
           Register as Participant
         </a>
       </div>
+      <div class="w-full flex justify-center">
         <a href="https://drive.google.com/drive/folders/14-FGH06Kc_abfP4JOOZgbRhQJ3BHYCjj?usp=sharing" target="_blank" 
-          class="accent-bg text-white px-8 py-3 font-semibold rounded-full hover:bg-gray-200 transition duration-300"
+          class="btn btn-outline w-full sm:w-auto"
         >
           Download Template Here
         </a>
+      </div>
     </div>
   </div>
 </section>
@@ -352,8 +352,8 @@
                             <div class="space-y-4 text-gray-700">
                                 <p><i class="fas fa-map-marker-alt w-6 accent-text"></i> <strong>Address:</strong><br>Jl. ZA. Pagar Alam No.9 -11, Labuhan Ratu, Kec. Kedaton, Kota Bandar Lampung, Lampung 35132</p>
                                 <p><i class="fas fa-phone w-6 accent-text"></i> <strong>Phone:</strong><br>Alvi Raihan Utami, M.Pd. +62-822-6934-8634<br>Dina Amelia, M.Hum. +62-853-8193-1945</p>
-                                <p><i class="fas fa-envelope w-6 accent-text"></i> <strong>Email:</strong><br><a href="mailto:icllle@teknokrat.ac.id" class="text-blue-600 hover:underline">icllle@teknokrat.ac.id</a></p>
-                                <p><i class="fab fa-instagram w-6 accent-text"></i> <strong>Instagram:</strong><br><a href="#" class="text-blue-600 hover:underline">icllle_teknokrat</a></p>
+                                <p><i class="fas fa-envelope w-6 accent-text"></i> <strong>Email:</strong><br><a href="mailto:icllle@teknokrat.ac.id" class="accent-text hover:underline">icllle@teknokrat.ac.id</a></p>
+                                <p><i class="fab fa-instagram w-6 accent-text"></i> <strong>Instagram:</strong><br><a href="#" class="accent-text hover:underline">icllle_teknokrat</a></p>
                             </div>
                         </div>
                     </div>
@@ -371,7 +371,7 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Have Any Questions?</h2>
                 <p class="mb-8 text-lg">About International Conference on Language, Linguistics, Literature, and Education</p>
-                <a href="https://api.whatsapp.com/send?phone=6285381931945&text=Hello%2C%20I%20want%20to%20more%20info%20about%20the%205th%20ICLLLE" class="bg-yellow-500 text-cyan-800 px-8 py-3 font-semibold rounded-full hover:bg-gray-200 transition duration-300">
+                <a href="https://api.whatsapp.com/send?phone=6285381931945&text=Hello%2C%20I%20want%20to%20more%20info%20about%20the%206th%20ICLLLE%202026" class="btn btn-accent shadow-lg">
                     CONTACT US
                 </a>
             </div>
@@ -415,13 +415,13 @@
     </main>
     
     <!-- Scroll Up Button -->
-<button id="scrollUpBtn" class="bg-yellow-500 hover:bg-yellow-600 fixed bottom-6 right-6 text-white p-3 rounded-full shadow-lg z-50 hidden transition-opacity duration-300 hover:opacity-80">
+<button id="scrollUpBtn" class="btn btn-accent btn-icon shadow-lg fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-50 hidden hover:scale-110" aria-label="Kembali ke atas">
     <i class="fas fa-arrow-up"></i>
 </button>
 
     <!-- Footer -->
     <footer class="accent-bg text-white text-center p-6">
-        <p>&copy; 2025 ICLLLE Conference. All Rights Reserved.</p>
+        <p>&copy; 2026 ICLLLE Conference. All Rights Reserved.</p>
         <p>Organized by Universitas Teknokrat Indonesia</p>
     </footer>
 
